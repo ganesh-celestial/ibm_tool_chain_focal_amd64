@@ -5,4 +5,4 @@ virt: lxd
 script:
   - echo "Running Hello world (C program) using IBM advanced tool chain gcc compiler"
   - /opt/at14.0/bin/powerpc64le-linux-gnu-gcc programs/hello_world.c -o hello_world_c_program
-  - ls
+  - ./hello_world_c_program
