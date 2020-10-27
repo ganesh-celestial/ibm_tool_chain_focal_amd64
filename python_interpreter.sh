@@ -23,16 +23,13 @@ export PATH=${PYTHON_LOCAL}/bin:${PATH}
 python3.8 -V
 make distclean
 
-ls /opt/python380-amd64/bin/
 
 PYTHON_LOCAL=/opt/python380-ppc
 
-export PATH=$PATH:/opt/at12.0/bin/
+export PATH=$PATH:/opt/at14.0/bin/
 ./configure --host=powerpc64le-linux-gnu --build=i586-linux-gnu --enable-optimizations --disable-ipv6 --prefix=${PYTHON_LOCAL} --exec-prefix=${PYTHON_LOCAL} ac_cv_file__dev_ptc=no ac_cv_have_long_long_format=yes ac_cv_file__dev_ptmx=no
 make clean profile-removal
 make -j`nproc`
 make install
-
-ls /opt/python380-ppc/bin/
 
 file ${PYTHON_LOCAL}/bin/python3.8
