@@ -1,0 +1,7 @@
+dist: focal
+arch: amd64
+group: edge
+virt: lxd
+script:
+  - cd /opt
+  - ls
