@@ -3,5 +3,6 @@ arch: amd64
 group: edge
 virt: lxd
 script:
-  - cd /opt
-  - ls
+  - echo "Running Hello world (C program) using IBM advanced tool chain gcc compiler"
+  - /opt/at14.0/bin/gcc programs/hello_world.c -o hello_world_c_program
+  - ./hello_world_c_program
