@@ -3,5 +3,5 @@ arch: amd64
 group: edge
 virt: lxd
 script:
-  - cd /opt/at14.0
+  - cd /opt/at14.0/bin
   - ls
